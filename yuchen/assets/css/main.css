@@ -23,7 +23,10 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	line-height: 2;
+	letter-spacing:2px;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -3823,10 +3826,10 @@ input, select, textarea {
 
 	#main > header {
 		padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url("../../images/main.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url("../../images/main.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url("../../images/main.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url("../../images/main.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url("../../images/flat2.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url("../../images/flat2.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url("../../images/flat2.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url("../../images/flat2.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
