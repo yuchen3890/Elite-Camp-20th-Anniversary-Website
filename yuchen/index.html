@@ -13,6 +13,7 @@
 		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style> body { display : none;} </style>
 	</head>
 	<body class="landing is-preload">
 
@@ -160,5 +161,13 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<script>
+				if (self == top) {
+					var theBody = document.getElementsByTagName('body')[0];
+					theBody.style.display = "block"
+				} else {
+					top.location = self.location
+				}
+			</script>
 	</body>
 </html>

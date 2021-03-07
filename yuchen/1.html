@@ -13,6 +13,7 @@
 		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style> body { display : none;} </style>
 	</head>
 	<body class="is-preload">
 
@@ -108,6 +109,14 @@
 		anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 		});
+	</script>
+	<script>
+		if (self == top) {
+			var theBody = document.getElementsByTagName('body')[0];
+			theBody.style.display = "block"
+		} else {
+			top.location = self.location
+		}
 	</script>
 	</body>
 </html>
